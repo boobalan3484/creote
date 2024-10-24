@@ -1,0 +1,7 @@
+.client-section{
+    background: url('/images/client/client-bg.jpg');
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    text-align: center;
+}

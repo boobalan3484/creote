@@ -1,0 +1,151 @@
+.section-wrapper {
+    overflow: hidden;
+    padding: 6em 1em 6em 1em;
+}
+
+.side-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px 10px 10px 100px;
+}
+
+.about-image-badge {
+    width: var(--container-widget-width, 150px);
+    max-width: 150px;
+    --container-widget-width: 150px;
+    --container-widget-flex-grow: 0;
+    top: -20px;
+    z-index: 2;
+    position: absolute;
+    left: -9px;
+}
+
+.about-image-badge-sub {
+    padding: 40px 10px 40px 10px;
+    background-color: var(--e-global-color-a291686);
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.15);
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column-reverse;
+}
+
+.counter-title {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    color: var(--e-global-color-secondary);
+    font-family: var(--e-global-typography-520c191-font-family), Sans-serif;
+    font-size: var(--e-global-typography-520c191-font-size);
+    font-weight: var(--e-global-typography-520c191-font-weight);
+    text-transform: var(--e-global-typography-520c191-text-transform);
+    line-height: var(--e-global-typography-520c191-line-height);
+    letter-spacing: var(--e-global-typography-520c191-letter-spacing);
+    word-spacing: var(--e-global-typography-520c191-word-spacing);
+}
+
+.counter-number-wrapper {
+    color: var(--e-global-color-primary);
+    font-family: var(--e-global-typography-5d167aa-font-family), Sans-serif;
+    font-size: var(--e-global-typography-5d167aa-font-size);
+    font-weight: var(--e-global-typography-5d167aa-font-weight);
+    line-height: var(--e-global-typography-5d167aa-line-height);
+    letter-spacing: var(--e-global-typography-5d167aa-letter-spacing);
+    word-spacing: var(--e-global-typography-5d167aa-word-spacing);
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.social-icon-count-size {
+    font-size: 60px;
+    color: var(--e-global-color-9eaa092);
+    border-color: var(--e-global-color-9eaa092);
+}
+
+.social-icon-count-size:hover {
+    color: var(--e-global-color-accent);
+    border-color: var(--e-global-color-accent)
+}
+
+.social-count-border-top {
+    border-top: 2px solid #cecece;
+}
+
+.social-count-border-bottom {
+    border-bottom: 2px solid #cecece;
+}
+
+.social-count-border-left {
+    border-left: 2px solid #cecece;
+}
+
+.social-count-border-right {
+    border-right: 2px solid #cecece;
+}
+
+@media(max-width:768px) {
+    .social-count-border-top {
+        border-top: 2px solid #cecece;
+    }
+}
+
+.social-border1,
+.social-border2,
+.social-border3 {
+    border-right: 2px solid #cecece;
+}
+
+@media(max-width:767px) {
+    .social-border1 {
+        border-right: 2px solid #cecece;
+        border-bottom: 2px solid #cecece;
+    }
+
+    .social-border2 {
+        border-right: unset;
+        border-bottom: 2px solid #cecece;
+    }
+
+    .social-border3 {
+        border-right: 2px solid #cecece;
+    }
+}
+
+
+/* ==================== */
+
+.contact-section {
+    background: url('/images/contact/consult-bg.jpg');
+    box-shadow: var(--box-shadow-two);
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.same_contact span {
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    background: var(--primary-color-one);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
