@@ -1,5 +1,5 @@
 import React, { createElement } from 'react'
-import '@/style/Footer.css'
+import '@/style/Default/Footer.css'
 
 import { MdMail } from "react-icons/md";
 import { FaArrowRight, FaMobileScreen } from "react-icons/fa6";

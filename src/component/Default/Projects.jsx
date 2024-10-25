@@ -1,5 +1,5 @@
 import React from 'react'
-import '@/style/Projects.css'
+import '@/style/Default/Projects.css'
 import BottomContainer from './Reusable/BottomContainer'
 import TitleSection from './Reusable/TitleSection'
 import LinkButton from './Reusable/LinkButton'

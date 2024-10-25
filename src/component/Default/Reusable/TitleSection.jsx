@@ -1,5 +1,5 @@
 import React from 'react'
-import '@/style/Reusable.css'
+import '@/style/Default/Reusable.css'
 import { FiBriefcase } from "react-icons/fi";
 
 const TitleSection = ({ className, textColor,desc_color,  title, headline, description }) => {

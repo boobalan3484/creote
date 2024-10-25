@@ -1,5 +1,5 @@
 import React from 'react'
-import '@/style/About.css'
+import '@/style/Default/About.css'
 import { IoPlayOutline } from "react-icons/io5";
 import TitleSection from './Reusable/TitleSection';
 import LinkButton from './Reusable/LinkButton';

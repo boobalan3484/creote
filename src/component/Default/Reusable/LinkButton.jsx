@@ -1,5 +1,5 @@
 import React from 'react'
-import '@/style/Reusable.css'
+import '@/style/Default/Reusable.css'
 
 const LinkButton = ({ div_ClassName, a_ClassName, label }) => {
     return (

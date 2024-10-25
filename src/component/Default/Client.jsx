@@ -1,5 +1,5 @@
 import React from 'react'
-import '@/style/Client.css'
+import '@/style/Default/Client.css'
 import AutoScrollCarousel from './Client/Carousel'
 
 const Client = () => {

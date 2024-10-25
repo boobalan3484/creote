@@ -1,5 +1,5 @@
 import React from 'react'
-import '@/style/LatestBlog.css'
+import '@/style/Default/LatestBlog.css'
 import ArticleCard from './LatestBlogs/ArticleCard'
 import TitleSection from './Reusable/TitleSection'
 

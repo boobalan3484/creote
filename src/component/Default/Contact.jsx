@@ -1,5 +1,5 @@
 import React from 'react'
-import '@/style/Contact.css'
+import '@/style/Default/Contact.css'
 import { TbSquareRoundedCheckFilled } from "react-icons/tb";
 import TitleSection from './Reusable/TitleSection';
 import LinkButton from './Reusable/LinkButton';

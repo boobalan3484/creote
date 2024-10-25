@@ -1,5 +1,5 @@
 import React from 'react'
-import '@/style/ChoosePlans.css'
+import '@/style/Default/ChoosePlans.css'
 import TitleSection from './Reusable/TitleSection'
 import { FaArrowRight, FaRegCircleCheck } from "react-icons/fa6";
 

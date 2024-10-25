@@ -1,6 +1,6 @@
 'use client'
 import React, { Fragment } from 'react'
-import '@/style/CarouselSlider.css'
+import '@/style/Default/CarouselSlider.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import LinkButton from '../Reusable/LinkButton';
 

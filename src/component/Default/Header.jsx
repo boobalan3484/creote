@@ -1,6 +1,6 @@
 'use client'
 import React, { Fragment, useEffect, useState } from 'react'
-import '@/style/Header.css'
+import '@/style/Default/Header.css'
 // import LinkButton from '../SectionComponent/LinkButton'
 import { FaAngleDown } from "react-icons/fa6";
 import { CgClose } from "react-icons/cg";

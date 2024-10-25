@@ -1,5 +1,5 @@
 import React from 'react'
-import '@/style/WhyUs.css'
+import '@/style/Default/WhyUs.css'
 import TitleSection from './Reusable/TitleSection'
 import { FaArrowRight } from "react-icons/fa6";
 import BottomContainer from './Reusable/BottomContainer';

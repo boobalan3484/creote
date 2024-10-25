@@ -2,16 +2,16 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import "aos/dist/aos.css"
-import Hero from '@/component/Hero'
-import AboutUs from '@/component/AboutUs'
-import Client from '@/component/Client'
-import Services from '@/component/Services'
-import WhyUs from '@/component/WhyUs'
-import Projects from '@/component/Projects'
-import LatestBlogs from '@/component/LatestBlogs'
-import Testimonial from '@/component/Testimonial'
-import Contact from '@/component/Contact'
-import ChoosePlans from '@/component/ChoosePlans'
+import Hero from '@/component/Default/Hero'
+import AboutUs from '@/component/Default/AboutUs'
+import Client from '@/component/Default/Client'
+import Services from '@/component/Default/Services'
+import WhyUs from '@/component/Default/WhyUs'
+import Projects from '@/component/Default/Projects'
+import LatestBlogs from '@/component/Default/LatestBlogs'
+import Testimonial from '@/component/Default/Testimonial'
+import Contact from '@/component/Default/Contact'
+import ChoosePlans from '@/component/Default/ChoosePlans'
 
 const LayoutWrapper = () => {
     useEffect(() => {

@@ -1,6 +1,6 @@
 'use client'
 import React, { Fragment } from 'react'
-import '@/style/Testimonial.css'
+import '@/style/Default/Testimonial.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { FaRegStar } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
