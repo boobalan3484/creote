@@ -3,10 +3,10 @@ import React, { useEffect } from 'react'
 import AOS from 'aos'
 import "aos/dist/aos.css"
 import Hero from '@/component/Home2/Hero'
-import AboutUs from '@/component/Default/AboutUs'
+import AboutUs from '@/component/Home2/AboutUs'
 import Client from '@/component/Default/Client'
-import Services from '@/component/Default/Services'
-import WhyUs from '@/component/Default/WhyUs'
+import Services from '@/component/Home2/Services'
+import WhyUs from '@/component/Home2/WhyUs'
 import Projects from '@/component/Default/Projects'
 import LatestBlogs from '@/component/Default/LatestBlogs'
 import Testimonial from '@/component/Default/Testimonial'
@@ -24,7 +24,11 @@ const LayoutHome2 = () => {
     return (
         <main>
             <Hero />
-            {/* <AboutUs />
+            <AboutUs />
+            <Services />
+            <WhyUs />
+
+            {/* 
             <Client />
             <Services />
             <WhyUs />

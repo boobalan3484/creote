@@ -1,6 +1,6 @@
 'use client'
 import React, { Fragment } from 'react'
-import '@/style/Default/CarouselSlider.css'
+import '@/style/Home2/CarouselSlider.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import LinkButton from '../Reusable/LinkButton';
 
@@ -9,7 +9,7 @@ const WelcomeSlider = () => {
         {
             id: 1,
             image: "url('/home2/images/hero/slider-12-1.jpg')",
-            main_ClassName: 'text-center px-5',
+            main_ClassName: 'text-start px-0 px-md-5',
             // title: 'Strategy & Planning',
             headline: 'Risk management and workplace audits to identify potential areas',
             ul_ClassName: 'justify-content-center',
@@ -39,7 +39,7 @@ const WelcomeSlider = () => {
         {
             id: 3,
             image: "url('/home2/images/hero/slider-12-1.jpg')",
-            main_ClassName: 'text-center px-5',
+            main_ClassName: 'text-start px-0 px-md-5',
             // title: 'Solutions for your business',
             headline: 'Risk management and workplace audits to identify potential areas',
             ul_ClassName: 'justify-content-center',
@@ -80,7 +80,7 @@ const WelcomeSlider = () => {
                                 </div>
                                 <div className='position-absolute container mx-auto h-100 w-100 top-0 text-white row d-flex align-items-center gap-4 px-4 p-md-5'>
                                     <div className="row">
-                                        <div className={`col-12 d-flex flex-column  justify-content-center gap-4 slider_content ${item.main_ClassName}`}>
+                                        <div className={`col-lg-7 col-md-12 col-sm-12 col-xs-12 d-flex flex-column  justify-content-center gap-4 slider_content_home2 ${item.main_ClassName}`}>
                                             <h6 data-aos="fade-down" data-aos-delay='8000'>
                                                 {item.title}
                                             </h6>
@@ -102,6 +102,11 @@ const WelcomeSlider = () => {
                                                 ))}
 
                                             </ul>
+                                        </div>
+                                        <div className="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                                            <div className="slider_image animate_left">
+                                                <img src="home2/images/hero/slider-12-i-1.jpg" className="img-fluid" alt="img" />
+                                            </div>
                                         </div>
                                     </div>
 

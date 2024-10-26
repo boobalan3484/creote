@@ -181,3 +181,13 @@
     border-bottom: 3px solid var(--primary-color-one);
     width: 60%;
 }
+
+.news_recent.image_s .image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 70px !important;
+    height: 70px;
+}

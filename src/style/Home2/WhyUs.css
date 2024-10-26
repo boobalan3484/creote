@@ -1,0 +1,541 @@
+/* ============ */
+.why-us .rs-tabs div button {
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+
+}
+
+.why-us .rs-tabs div button:active,
+.why-us .rs-tabs div button:focus,
+.why-us .rs-tabs div button:hover {
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color-one);
+
+}
+
+.rs-nav-item.rs-nav-item-active{
+    color: var(--primary-color-one);
+    fill: var(--primary-color-one);
+}
+
+.rs-nav-subtle .rs-nav-item.rs-nav-item-active:before {
+    color: var(--primary-color-one);
+    fill: var(--primary-color-one);
+    background-color: var(--primary-color-one);
+}
+
+/* ====================== */
+
+@media (max-width: 1199px) {
+    .parallax_cover img {
+        -o-object-fit: cover !important;
+        object-fit: cover !important;
+    }
+}
+
+/* =================================== */
+
+.simple_image_boxes {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+
+    &.style_two {
+        background: var(--primary-color-three);
+        padding: 50px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+
+        .parallax_cover {
+            position: relative;
+            overflow: hidden;
+            height: 540px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+
+            img {
+                border-radius: 0px;
+            }
+        }
+    }
+}
+
+/* =============================================== */
+
+.progress_bar {
+    position: relative;
+
+    .bar {
+        position: relative;
+        width: 100%;
+        height: 6px;
+        background: var(--primary-color-three);
+        border-radius: 10px;
+        margin-bottom: 12px;
+
+        .bar-inner {
+            position: relative;
+            display: block;
+            width: 0px;
+            height: 6px;
+            background: var(--primary-color-one);
+            border-radius: 10px;
+            transition: all 1500ms ease;
+            -ms-transition: all 1500ms ease;
+            -o-transition: all 1500ms ease;
+            -moz-transition: all 1500ms ease;
+        }
+    }
+
+    h2 {
+        position: relative;
+        font-family: var(--creote-family-one);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-bottom: 10px;
+        padding-right: 45px;
+
+        span {
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: var(--primary-color-one);
+            font-size: 16px;
+        }
+    }
+
+    &.style_two {
+        .progress_new {
+            height: 170px;
+            position: relative;
+            float: left;
+
+            .progress-value {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                width: 170px;
+                height: 170px;
+                line-height: 170px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+
+                h6 {
+                    padding: 10px 30px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    color: var(--primary-color-one);
+                }
+            }
+
+            .ProgressBar,
+            .ProgressBar-contentCircle {
+                display: table;
+                height: 170px;
+                position: relative;
+                width: 170px;
+                margin: auto;
+            }
+
+            .ProgressBar-circle,
+            .ProgressBar-background {
+                /* //animation: progress 1s; */
+                fill: none;
+                /* // background color */
+                stroke: var(--primary-color-one);
+                /* // path color */
+                stroke-width: 5px;
+                /* // path size */
+                stroke-linecap: round;
+                stroke-dasharray: 0;
+                /* // circonférence du cercle */
+                stroke-dashoffset: 0;
+                /* // longeur du cercle */
+                position: relative;
+                z-index: 10;
+            }
+
+            .ProgressBar-background {
+                stroke: rgba(0, 0, 0, .05);
+                /* // path color */
+                stroke-width: 5 - 1;
+                z-index: 0;
+            }
+
+            .ProgressBar-percentage {
+                color: var(--primary-color-two);
+                font-size: 40px;
+                text-align: center;
+                width: 100%;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+
+        }
+
+        .content_box {
+            position: relative;
+            margin-left: 180px;
+            padding: 0px 0px 10px;
+
+            h2 {
+                font-size: 36px;
+                font-weight: 700;
+                color: var(--primary-color-one);
+                line-height: 46px;
+                margin-bottom: 5px;
+                padding-right: unset;
+                padding-top: 15px;
+            }
+
+            h3 {
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 32px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &.style_three {
+        .bar {
+            position: relative;
+            width: 100%;
+            height: 8px;
+            background: var(--primary-color-three);
+            border-radius: 10px;
+            margin-bottom: 12px;
+
+            .bar-inner {
+                position: relative;
+                display: block;
+                width: 0px;
+                height: 8px;
+                background: #fff;
+                background-image: linear-gradient(to right, #fff, var(--primary-color-one));
+                border-radius: 10px;
+                transition: all 1500ms ease;
+                -ms-transition: all 1500ms ease;
+                -o-transition: all 1500ms ease;
+                -moz-transition: all 1500ms ease;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 12px;
+                    height: 12px;
+                    border-top: 8px solid transparent;
+                    border-bottom: 8px solid transparent;
+                    border-left: 16px solid var(--primary-color-one);
+                    border-right: 12px solid transparent;
+                    right: -25px;
+                    top: -4px;
+                }
+            }
+        }
+
+        h2 {
+            position: relative;
+            font-family: var(--creote-family-one);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+            margin-bottom: 10px;
+            padding-right: 45px;
+
+            span {
+                position: absolute;
+                right: 0;
+                top: 0;
+                color: var(--primary-color-one);
+                font-size: 16px;
+            }
+        }
+    }
+
+    &.style_four {
+        position: relative;
+        padding: 30px;
+        background: var(--primary-color-two);
+
+        .progress_new {
+            height: 140px;
+
+            position: relative;
+
+
+            .progress-value {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                width: 60px;
+                height: 24px;
+                line-height: 40px;
+                text-align: center;
+
+                h6 {
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    color: var(--primary-color-one);
+                }
+            }
+
+            .ProgressBar,
+            .ProgressBar-contentCircle {
+                display: table;
+                height: 140px;
+                position: relative;
+                width: 140px;
+                margin: auto;
+            }
+
+            .ProgressBar-circle,
+            .ProgressBar-background {
+                /* //animation: progress 1s; */
+                fill: none;
+                /* // background color */
+                stroke: var(--primary-color-one);
+                /* // path color */
+                stroke-width: 5px;
+                /* // path size */
+                stroke-linecap: round;
+                stroke-dasharray: 0;
+                /* // circonférence du cercle */
+                stroke-dashoffset: 0;
+                /* // longeur du cercle */
+                position: relative;
+                z-index: 10;
+            }
+
+            .ProgressBar-background {
+                stroke: rgba(255, 255, 255, .05);
+                /* // path color */
+                stroke-width: 5 - 1;
+                z-index: 0;
+            }
+
+            .ProgressBar-percentage {
+                color: var(--primary-color-two);
+                font-size: 40px;
+                text-align: center;
+                width: 100%;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+
+        }
+
+        .content_box {
+            position: relative;
+            text-align: center;
+
+            h2 {
+                font-size: 20px;
+                font-weight: 700;
+                color: #fff;
+                line-height: 30px;
+                margin-top: 20px;
+                padding-right: 0px;
+            }
+
+        }
+
+        &.color_two {
+            background: var(--primary-color-one);
+
+            .progress_new {
+
+                .ProgressBar-circle,
+                .ProgressBar-background {
+                    stroke: #fff;
+                }
+
+                .ProgressBar-background {
+                    stroke: rgba(255, 255, 255, .05);
+                    /* // path color */
+                }
+
+                .progress-value h6 {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* ================================================ */
+.choose-background {
+    padding: 0em 1em 7em 1em;
+}
+
+.choose-item-anime {
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
+}
+
+.choose-item-wrapper {
+    background-color: var(--e-global-color-a291686);
+    padding: 30px 35px 35px 35px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    border-style: solid;
+    border-width: 0px 0px 4px 0px;
+    border-color: var(--e-global-color-a954db2);
+    border-radius: 10px 10px 10px 10px;
+
+    transition: all .4s ease;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.choose-item-wrapper:hover,
+.choose-item-wrapper:focus,
+.choose-item-wrapper:active {
+    border-style: solid;
+    border-width: 0px 0px 4px 0px;
+    border-color: var(--e-global-color-accent);
+}
+
+.choose-item-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.choose-item-wrapper:hover .choose-item-btn {
+    color: var(--e-global-color-a291686);
+    background-color: transparent;
+    background-image: linear-gradient(150deg, var(--e-global-color-primary) 0%, var(--e-global-color-dea41e4) 100%);
+    border-style: none;
+}
+
+
+/* =================================== */
+.choose_box.type_one {
+    position: relative;
+    margin: 40px 0px 30px;
+}
+
+.choose_box.type_one .image_box {
+    position: absolute;
+    margin: 0px 0px 0px auto;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    background: var(--color-white);
+    border-radius: 50px;
+    text-align: center;
+    top: -40px;
+    left: 30px;
+    box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.09);
+    transition: all 0.6s ease-in-out;
+}
+
+.choose_box.type_one .image_box img {
+    position: absolute;
+    width: 60px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+}
+
+.choose_box.type_one .content_box {
+    position: relative;
+    overflow: hidden;
+    padding: 75px 30px 30px;
+    background: var(--color-white);
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    transition: all 0.6s ease-in-out;
+}
+
+.choose_box.type_one .step_no {
+    position: absolute;
+    content: "";
+    width: 49px;
+    height: 48px;
+    padding-right: 6px;
+    border-radius: 50px;
+    color: var(--heading-dark);
+    line-height: 54px;
+    display: block;
+    top: -7px;
+    right: -11px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 5px 22px 0px;
+    transition: all 0.6s ease;
+    background: #fff;
+    -moz-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
+
+.choose_box.type_one .text_box {
+    position: relative;
+    z-index: 1;
+    padding-top: 15px;
+}
+
+.choose_box.type_one .text_box h2 a {
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    display: block;
+    /* margin-bottom: 10px; */
+    transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
+
+.choose_box.type_one .content_box .text_box div a {
+    color: var(--primary-color-one) !important;
+}
+
+.choose_box.type_one:hover .content_box {
+    background: var(--primary-color-one);
+}
+
+.choose_box.type_one:hover .content_box .text_box h2 a,
+.choose_box.type_one:hover .content_box .text_box p,
+.choose_box.type_one:hover .content_box .text_box div a {
+    color: #ffffff !important;
+}
