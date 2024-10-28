@@ -13,7 +13,7 @@ import Blogs from '@/component/Home2/Blogs'
 import Job from '@/component/Home2/Job'
 import ProcessSection from '@/component/Home2/ProcessSection'
 
-const LayoutHome2 = () => {
+const LayoutHome3 = () => {
     useEffect(() => {
         AOS.init({
             offset: 80,
@@ -37,4 +37,4 @@ const LayoutHome2 = () => {
     )
 }
 
-export default LayoutHome2
+export default LayoutHome3

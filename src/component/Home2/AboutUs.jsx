@@ -24,7 +24,7 @@ const AboutUs = () => {
                             </div>
                             <div className="image two">
                                 <img src="/home2/images/make-sense/about-7.png" className="img-fluid" alt="image" />
-                                <div className="video_box">
+                                <div className="video_section video_box">
                                     <a href="#" className="lightbox-image">
                                         {/* <a href="https://youtu.be/RN81h85V6D4" className='d-flex justify-content-center align-items-center'> */}
                                         <IoPlayOutline />

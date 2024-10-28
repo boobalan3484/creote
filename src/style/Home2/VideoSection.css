@@ -1,0 +1,41 @@
+.video-btn-wrapper {
+    background: url('/home2/images/video-section/banner-four-bg.jpg');
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    padding: 0px !important;
+}
+
+.video_section.video_box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-content-wrapper {
+    background-image: url('/home2/images/video-section/home-12-testi.jpg');
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.clients .image {
+    position: relative;
+}
+
+.clients .image img {
+    width: 200px;
+    height: auto;
+}
+
+.video_communication_icon{
+    background: transparent;
+    border: 1px dashed #fff;
+    /* padding: 8px; */
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

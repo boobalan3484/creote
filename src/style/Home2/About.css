@@ -152,7 +152,7 @@
     margin-bottom: 6px;
 } */
 
-.video_box a {
+.video_section.video_box a {
     position: relative;
     display: inline-block;
     font-size: 30px !important;

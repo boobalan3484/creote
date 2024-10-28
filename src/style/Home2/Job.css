@@ -1,0 +1,33 @@
+.job-box {
+    position: relative;
+    background: var(--primary-color-three);
+    border: 1px solid var(--border-color-dark);
+    padding: 30px 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.job-box a .inner_bx .logo_bx {
+    position: absolute;
+    width: 105px;
+    /* top: 0;
+    left: 0; */
+}
+
+.job-box a .inner_bx .logo_bx img {
+    width: 80px;
+}
+
+.job-box a .inner_bx .content_bx {
+    position: relative;
+    margin-left: 105px;
+}
+
+.job-box .inner_bx .content_bx .meta {
+    position: relative;
+    border-top: 1px solid var(--border-color-dark);
+}
+
+.job-box a{
+    color: var(--primary-color-one);
+}
