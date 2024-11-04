@@ -1,5 +1,5 @@
 'use client'
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { createElement, Fragment, useEffect, useState } from 'react'
 import '@/style/Home2/Header.css'
 // import LinkButton from '../SectionComponent/LinkButton'
 import { FaAngleDown } from "react-icons/fa6";
@@ -8,81 +8,106 @@ import { HiMenu } from "react-icons/hi";
 import { BsTelephone } from "react-icons/bs";
 import { MdMailOutline } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
-const nav_links = [
-    {
-        id: 1,
-        label: 'Home',
-        link: '/',
-    },
-    {
-        id: 2,
-        label: 'About us',
-        link: '/',
-    },
-    {
-        id: 3,
-        label: 'Services',
-        link: '/',
-        child: [
-            {
-                id: 1,
-                parent_id: 3,
-                label: 'Pricing Plan',
-                link: '/',
-            },
-            {
-                id: 2,
-                parent_id: 3,
-                label: 'Partners',
-                link: '/',
-            },
-        ]
-    },
-    {
-        id: 4,
-        label: 'Influencer',
-        link: '/',
-    },
-    {
-        id: 5,
-        label: 'Pages',
-        link: '/',
-        child: [
-            {
-                id: 1,
-                parent_id: 5,
-                label: 'Gallery',
-                link: '/',
-            },
-            {
-                id: 2,
-                parent_id: 5,
-                label: 'Contact us',
-                link: '/',
-            },
-            {
-                id: 3,
-                parent_id: 5,
-                label: 'FAQ',
-                link: '/',
-            },
-            {
-                id: 4,
-                parent_id: 5,
-                label: 'Blog',
-                link: '/',
-            },
-            {
-                id: 5,
-                parent_id: 5,
-                label: 'Error 404',
-                link: '/',
-            },
-        ]
-    }
-]
+import { data } from '@/utils/Data'
+
+// const nav_links = [
+//     {
+//         id: 1,
+//         label: 'Home',
+//         link: '/',
+//         child: [
+//             {
+//                 id: 1,
+//                 parent_id: 1,
+//                 label: 'Home 1',
+//                 link: '/',
+//             },
+//             {
+//                 id: 2,
+//                 parent_id: 1,
+//                 label: 'Home 2',
+//                 link: '/home2',
+//             },
+//             {
+//                 id: 3,
+//                 parent_id: 1,
+//                 label: 'Home 3',
+//                 link: '/home3',
+//             },
+//         ]
+//     },
+//     {
+//         id: 2,
+//         label: 'About us',
+//         link: '/',
+//     },
+//     {
+//         id: 3,
+//         label: 'Services',
+//         link: '/',
+//         child: [
+//             {
+//                 id: 1,
+//                 parent_id: 3,
+//                 label: 'Pricing Plan',
+//                 link: '/',
+//             },
+//             {
+//                 id: 2,
+//                 parent_id: 3,
+//                 label: 'Partners',
+//                 link: '/',
+//             },
+//         ]
+//     },
+//     {
+//         id: 4,
+//         label: 'Influencer',
+//         link: '/',
+//     },
+//     {
+//         id: 5,
+//         label: 'Pages',
+//         link: '/',
+//         child: [
+//             {
+//                 id: 1,
+//                 parent_id: 5,
+//                 label: 'Gallery',
+//                 link: '/',
+//             },
+//             {
+//                 id: 2,
+//                 parent_id: 5,
+//                 label: 'Contact us',
+//                 link: '/',
+//             },
+//             {
+//                 id: 3,
+//                 parent_id: 5,
+//                 label: 'FAQ',
+//                 link: '/',
+//             },
+//             {
+//                 id: 4,
+//                 parent_id: 5,
+//                 label: 'Blog',
+//                 link: '/',
+//             },
+//             {
+//                 id: 5,
+//                 parent_id: 5,
+//                 label: 'Error 404',
+//                 link: '/',
+//             },
+//         ]
+//     }
+// ]
 
 const Header = () => {
+
+    const {logo_white, nav_links, contact_us } = data
+
     const [navMenu, setNavMenu] = useState(false);
     const [activeMenu, setActiveMenu] = useState(null);
     const [isVisible, setIsVisible] = useState(false);
@@ -132,44 +157,23 @@ const Header = () => {
                             </div> */}
                             <div className="d-flex">
                                 <ul className="contact_info_two text-start text-lg-center">
-                                    <li className="single my-2 my-lg-0 mx-3">
-                                        <div className='home2_icon_bg d-flex gap-2'>
-                                            <span className="icon-telephone"> <BsTelephone className='fs-3'/></span>
-                                            <div className='d-flex flex-column text-start gap-2'>
-                                                <h5> Phone </h5>
-                                                <a href="tel:+98 060 712 34">+98 060 712 34</a>
+                                    {contact_us.map((item, idx) => (
+                                        <li className="single my-2 my-lg-0 mx-3" key={idx}>
+                                            <div className='home2_icon_bg d-flex gap-2'>
+                                                <span className="icon-telephone"> {createElement(item.icon, {className:'fs-3'})}</span>
+                                                <div className='d-flex flex-column text-start gap-2'>
+                                                    <h5 className='text-capitalize'> {item.platform} </h5>
+                                                    <a href={item.url}>{item.label}</a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li className="single my-2 my-lg-0 mx-3">
-                                        {/* <p className='home2_icon_bg'><span className="icon-mail">
-                                            <MdMailOutline />
-                                        </span><a href="mailto:sendmail@creote.com">sendmail@creote.com</a>
-                                        </p> */}
-
-                                        <div className='home2_icon_bg d-flex gap-2'>
-                                            <span className="icon-mail"> <MdMailOutline className='fs-3' /></span>
-                                            <div className='d-flex flex-column text-start gap-2'>
-                                                <h5> Mail Us</h5>
-                                                <a href="mailto:sendmail@creote.com">sendmail@creote.com</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li className="single my-2 my-lg-0 mx-3">
-                                        <div className='home2_icon_bg d-flex gap-2'>
-                                            <span className="icon-location2"> <IoLocationOutline className='fs-3'/></span>
-                                            <div className='d-flex flex-column text-start gap-2'>
-                                                <h5> Location </h5>
-                                                <a href="tel:+98 060 712 34">61W Business Str Hobert, LA</a>
-                                            </div>
-                                        </div>
-                                    </li>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section className='header-section'>
+                <section className='header-section2'>
                     <div className='header-overlay'>
                         <div className={`header-effect ${isVisible ? 'header-visible' : ''}`}></div>
                     </div>
@@ -178,7 +182,7 @@ const Header = () => {
                             <div className='header-logo-wrapper '>
                                 <div className='header-logo-anime'>
                                     <a href="/" className='header-logo-link'>
-                                        <img src='/home2/images/logo-white-1.png' alt="" className='header-logo-img' />
+                                        <img src={logo_white} alt="" className='header-logo-img' />
                                     </a>
                                 </div>
                             </div>
@@ -195,7 +199,7 @@ const Header = () => {
                                                 {!category.child ?
                                                     (
                                                         <li className='' key={category.id}>
-                                                            <a href='/' className=' header-nav-link text-uppercase fw-semibold'>
+                                                            <a href='/' className=' header-nav-link2 text-uppercase fw-semibold'>
                                                                 {category.label}
                                                             </a>
                                                         </li>

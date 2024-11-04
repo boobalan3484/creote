@@ -86,7 +86,7 @@
     font-weight: 400;
 }
 
-.header-section {
+.header-section2 {
     --e-transform-transition-duration: 100ms;
     /* position: fixed; */
     /* width: 1082.4px; */
@@ -199,7 +199,7 @@
     transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
 }
 
-.header-nav-link {
+.header-nav-link2 {
     color: var(--color-white);
     fill: var(--e-global-color-secondary);
     padding-left: 0px;

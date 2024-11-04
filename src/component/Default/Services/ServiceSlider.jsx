@@ -4,10 +4,6 @@ import '@/style/Default/Testimonial.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { FaArrowRight } from "react-icons/fa6";
 
-import { FaRegStar } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
-import { FaStarHalfAlt } from "react-icons/fa";
-import { PiQuotesLight } from "react-icons/pi";
 import ThumbSvgComponent from '../../../../public/icons/Thumb';
 
 const ServiceSlider = () => {

@@ -2,16 +2,15 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import "aos/dist/aos.css"
-import Hero from '@/component/Home2/Hero'
-import AboutUs from '@/component/Home2/AboutUs'
-import Services from '@/component/Home2/Services'
-import WhyUs from '@/component/Home2/WhyUs'
-import Contact from '@/component/Home2/Contact'
+import AboutUs from '@/component/Home3/AboutUs'
 import Teams from '@/component/Home2/Teams'
-import VideoSection from '@/component/Home2/VideoSection'
-import Blogs from '@/component/Home2/Blogs'
-import Job from '@/component/Home2/Job'
-import ProcessSection from '@/component/Home2/ProcessSection'
+import Client from '@/component/Default/Client'
+import Contact from '@/component/Home3/Contact'
+import Testimonial from '@/component/Home3/Testimonial'
+import Blogs from '@/component/Home3/Blogs'
+import Services from '@/component/Home3/Services'
+import Projects from '@/component/Home3/Projects'
+import ContactForm from '@/component/Home3/ContactForm'
 
 const LayoutHome3 = () => {
     useEffect(() => {
@@ -23,14 +22,13 @@ const LayoutHome3 = () => {
 
     return (
         <main>
-            <Hero />
-            <ProcessSection />
-            <AboutUs />
             <Services />
-            <WhyUs />
+            <AboutUs />
+            <Projects />
+            <ContactForm />
             <Teams />
-            <VideoSection />
-            <Job />
+            <Testimonial />
+            <Client />
             <Blogs />
             <Contact />
         </main>

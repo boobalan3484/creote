@@ -1,151 +1,14 @@
 import React, { createElement } from 'react'
 import '@/style/Home2/Footer.css'
 
-import { MdMail } from "react-icons/md";
-import { FaArrowRight, FaMobileScreen } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 
-import { FaFacebookF } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
-import { AiOutlineYoutube } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FaLocationDot } from "react-icons/fa6";
-import LinkButton from './Reusable/LinkButton';
-import { FaRegClock } from "react-icons/fa6";
+import { data } from '@/utils/Data'
 
 
 const Footer = () => {
 
-    const quick_links1 = [
-        {
-            name: 'Infrastructure',
-            url: ''
-        },
-        {
-            name: 'Client Support',
-            url: ''
-        },
-        {
-            name: 'Privacy Policy',
-            url: ''
-        },
-        {
-            name: 'Terms of Use',
-            url: ''
-        },
-        {
-            name: 'Careers',
-            url: ''
-        },
-        {
-            name: 'Site Map',
-            url: ''
-        },
-        {
-            name: 'Contact',
-            url: ''
-        },
-    ]
-
-    const quick_links2 = [
-        {
-            name: "How it's Work",
-            url: ''
-        },
-        {
-            name: 'Testimonials',
-            url: ''
-        },
-        {
-            name: 'HR Solutions',
-            url: ''
-        },
-        {
-            name: 'Case Studies',
-            url: ''
-        },
-        {
-            name: 'Partners',
-            url: ''
-        },
-        {
-            name: 'Key Areas',
-            url: ''
-        },
-        {
-            name: 'Pricing',
-            url: ''
-        }
-    ]
-
-    const recent_news = [
-        {
-            title: 'Why Should Business Payroll Outsourcing?',
-            image: 'blog-image-7'
-        },
-        {
-            title: 'Most Employees Support Measures',
-            image: 'blog-image-8'
-        },
-        {
-            title: 'How to Handle Employee',
-            image: 'blog-image-9'
-        },
-    ]
-
-    const contact_us = [
-        {
-            platform: 'address',
-            icon: FaLocationDot,
-            label: 'Jl Cempaka Wangi No 22 Jakarta - Indonesia',
-            url: '/'
-        },
-        {
-            platform: 'mail',
-            icon: MdMail,
-            label: 'support@example.com',
-            url: 'mailto:support@example.com'
-        },
-        {
-            platform: 'mobile',
-            icon: FaMobileScreen,
-            label: '+6221.2002.2012',
-            url: 'https://wa.me/+622120022012'
-        },
-    ]
-
-    const social = [
-        {
-            platform: 'LinkedIn',
-            icon: FaLinkedinIn,
-            link: 'https://www.linkedin.com/',
-            color: '#0a66c2',
-        },
-        {
-            platform: 'Instagram',
-            icon: FaInstagram,
-            link: 'https://www.instagram.com/',
-            color: 'linear-gradient(45deg, #FF7A00, #FF0169, #D300C5)', // Using a gradient
-        },
-        {
-            platform: 'X Corp.',
-            icon: FaXTwitter,
-            link: 'https://x.com/',
-            color: '#000',
-        },
-        {
-            platform: 'YouTube',
-            icon: AiOutlineYoutube,
-            link: 'https://www.youtube.com/',
-            color: '#FF0000',
-        },
-        {
-            platform: 'Facebook',
-            icon: FaFacebookF,
-            link: 'https://www.facebook.com/',
-            color: '#0866ff',
-        },
-    ];
+    const { recent_news, social, contact_us, quick_links1, quick_links2 } = data
 
     return (
         <footer className='footer-background'>
@@ -208,9 +71,9 @@ const Footer = () => {
                                                 <h2 className="title"><a href="blog-single.html" rel="bookmark">{item.title}</a></h2>
                                                 <a className="date d-flex align-items-center gap-2">
                                                     <span className="fa fa-clock-o">
-                                                        <FaRegClock />
+                                                        {createElement(item.icon)}
                                                     </span>
-                                                    October 8, 2023
+                                                    {item.date}
                                                 </a>
                                             </div>
                                         </div>
@@ -264,7 +127,7 @@ const Footer = () => {
                                         <p className='text-white'>
                                             Subscribe Us & Receive Our Offers and Updates in Your Inbox Directly.
                                         </p>
-                
+
                                         <form>
                                             <div className='input-group'>
                                                 <input
@@ -280,7 +143,7 @@ const Footer = () => {
                                         </form>
 
                                         <p className='text-white'>
-                                        * We do not share your email id
+                                            * We do not share your email id
                                         </p>
                                     </div>
 

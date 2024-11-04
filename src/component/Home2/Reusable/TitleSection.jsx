@@ -4,7 +4,7 @@ import '@/style/Home2/Reusable.css'
 const TitleSection = ({ className, textColor,desc_color,  title, headline, description }) => {
     return (
         <div className={`title_all_box ${className || textColor}`}>
-            <div className="title_sections"> 
+            <div className={`title_sections ${className}`}> 
                 <div className={`title_before mb-3 text-capitalize ${textColor}`}>
                     {title}
                 </div>

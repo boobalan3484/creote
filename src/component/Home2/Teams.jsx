@@ -44,7 +44,7 @@ const Teams = () => {
             <div className='container px-4'>
                 <div className='row gap-4'>
                     <div className="col-lg-6 m-auto text-center">
-                        <TitleSection
+                        <TitleSection className='d-flex flex-column align-items-center justify-content-center'
                             title='Dedicated Team'
                             headline=' Professional Individuals '
                             description="Our power of choice is untrammelled and when nothing prevents being able to do what we like best every pleasure."

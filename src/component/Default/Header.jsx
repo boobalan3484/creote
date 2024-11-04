@@ -1,88 +1,15 @@
 'use client'
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { createElement, Fragment, useEffect, useState } from 'react'
 import '@/style/Default/Header.css'
-// import LinkButton from '../SectionComponent/LinkButton'
 import { FaAngleDown } from "react-icons/fa6";
 import { CgClose } from "react-icons/cg";
 import { HiMenu } from "react-icons/hi";
-import { BsTelephone } from "react-icons/bs";
-import { MdMailOutline } from "react-icons/md";
-import { IoLocationOutline } from "react-icons/io5";
-const nav_links = [
-    {
-        id: 1,
-        label: 'Home',
-        link: '/',
-    },
-    {
-        id: 2,
-        label: 'About us',
-        link: '/',
-    },
-    {
-        id: 3,
-        label: 'Services',
-        link: '/',
-        child: [
-            {
-                id: 1,
-                parent_id: 3,
-                label: 'Pricing Plan',
-                link: '/',
-            },
-            {
-                id: 2,
-                parent_id: 3,
-                label: 'Partners',
-                link: '/',
-            },
-        ]
-    },
-    {
-        id: 4,
-        label: 'Influencer',
-        link: '/',
-    },
-    {
-        id: 5,
-        label: 'Pages',
-        link: '/',
-        child: [
-            {
-                id: 1,
-                parent_id: 5,
-                label: 'Gallery',
-                link: '/',
-            },
-            {
-                id: 2,
-                parent_id: 5,
-                label: 'Contact us',
-                link: '/',
-            },
-            {
-                id: 3,
-                parent_id: 5,
-                label: 'FAQ',
-                link: '/',
-            },
-            {
-                id: 4,
-                parent_id: 5,
-                label: 'Blog',
-                link: '/',
-            },
-            {
-                id: 5,
-                parent_id: 5,
-                label: 'Error 404',
-                link: '/',
-            },
-        ]
-    }
-]
+import { data } from '@/utils/Data'
 
-const Header = () => {
+const Header1 = () => {
+
+    const { logo, nav_links, contact_us } = data
+
     const [navMenu, setNavMenu] = useState(false);
     const [activeMenu, setActiveMenu] = useState(null);
     const [isVisible, setIsVisible] = useState(false);
@@ -132,24 +59,14 @@ const Header = () => {
                             </div>
                             <div className="top_right text-right">
                                 <ul className="contact_info_two text-center">
-                                    <li className="single mx-3">
-                                        <p> <span className="icon-telephone">
-                                            <BsTelephone />
-                                        </span> <a href="tel:+98 060 712 34">+98 060 712 34</a>
-                                        </p>
-                                    </li>
-                                    <li className="single mx-3">
-                                        <p><span className="icon-mail">
-                                            <MdMailOutline />
-                                        </span><a href="mailto:sendmail@creote.com">sendmail@creote.com</a>
-                                        </p>
-                                    </li>
-                                    <li className="single mx-3">
-                                        <p> <span className="icon-location2">
-                                            <IoLocationOutline />
-                                        </span>
-                                            61W Business Str Hobert, LA </p>
-                                    </li>
+                                    {contact_us.map((item, idx) => (
+                                        <li className="single mx-3" key={idx}>
+                                            <p> <span className="icon-telephone">
+                                                {createElement(item.icon)}
+                                            </span> <a href={item.url}>{item.label}</a>
+                                            </p>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>
@@ -164,7 +81,7 @@ const Header = () => {
                             <div className='header-logo-wrapper '>
                                 <div className='header-logo-anime'>
                                     <a href="/" className='header-logo-link'>
-                                        <img src='/images/logo-default.png' alt="" className='header-logo-img' />
+                                        <img src={logo.logo_default.src} alt="" className='header-logo-img' />
                                     </a>
                                 </div>
                             </div>
@@ -213,7 +130,6 @@ const Header = () => {
                                         ))}
                                     </ul>
                                 </nav>
-                                {/* <LinkButton label='Get Started' /> */}
                             </div>
                         </div>
                         {navMenu && (
@@ -257,7 +173,6 @@ const Header = () => {
                                         ))}
                                     </ul>
                                 </nav>
-                                {/* <LinkButton label='Get Started' margin='my-0' className='w-100 rounded-1 justify-content-center' /> */}
                             </div>
                         )}
                     </div>
@@ -267,4 +182,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header1

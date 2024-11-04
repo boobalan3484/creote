@@ -8,7 +8,7 @@ const WelcomeSlider = () => {
     const slider_list = [
         {
             id: 1,
-            image: "url('/home2/images/hero/slider-12-1.jpg')",
+            image: "slider-12-1",
             main_ClassName: 'text-start px-0 px-md-5',
             // title: 'Strategy & Planning',
             headline: 'Risk management and workplace audits to identify potential areas',
@@ -23,7 +23,7 @@ const WelcomeSlider = () => {
         },
         {
             id: 2,
-            image: "url('/home2/images/hero/slider-12-1.jpg')",
+            image: "slider-12-1",
             main_className: 'text-start px-0 px-md-5',
             // title: 'Solutions for your business',
             headline: 'Risk management and workplace audits to identify potential areas',
@@ -38,7 +38,7 @@ const WelcomeSlider = () => {
         },
         {
             id: 3,
-            image: "url('/home2/images/hero/slider-12-1.jpg')",
+            image: "slider-12-1",
             main_ClassName: 'text-start px-0 px-md-5',
             // title: 'Solutions for your business',
             headline: 'Risk management and workplace audits to identify potential areas',
@@ -70,13 +70,14 @@ const WelcomeSlider = () => {
                 }
                 }
                 style={{ height: '100%' }}
+                className='home2-slider'
             >
                 {slider_list.map((item, idx) => (
                     <Fragment key={idx}>
                         <SplideSlide >
                             <div className='slide-item-content position-relative d-flex justify-content-center'>
                                 <div className='slide_item ' >
-                                    <div className="image-layer" style={{ backgroundImage: `${item.image}` }}></div>
+                                    <div className="image-layer" style={{ backgroundImage: `url('/home2/images/hero/${item.image}.jpg` }}></div>
                                 </div>
                                 <div className='position-absolute container mx-auto h-100 w-100 top-0 text-white row d-flex align-items-center gap-4 px-4 p-md-5'>
                                     <div className="row">
