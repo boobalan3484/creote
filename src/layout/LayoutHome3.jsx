@@ -11,6 +11,7 @@ import Blogs from '@/component/Home3/Blogs'
 import Services from '@/component/Home3/Services'
 import Projects from '@/component/Home3/Projects'
 import ContactForm from '@/component/Home3/ContactForm'
+import Hero from '@/component/Home3/Hero'
 
 const LayoutHome3 = () => {
     useEffect(() => {
@@ -22,6 +23,8 @@ const LayoutHome3 = () => {
 
     return (
         <main>
+
+            <Hero />
             <Services />
             <AboutUs />
             <Projects />

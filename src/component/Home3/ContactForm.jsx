@@ -80,7 +80,7 @@ const ContactForm = () => {
                     </div>
                 </div>
                 <div className="position-absolute end-0 top-0 h-100 d-none d-lg-flex justify-content-center align-items-center col-7">
-                    <div className='p-5 bg-light rounded shadow w-75 mx-auto'>
+                    <div className='p-lg-4 p-xl-5 bg-light rounded shadow mx-auto' style={{width:'70%'}}>
                         <TitleSection className='text-center'
                             title='Reach us'
                             headline='Send a message'
@@ -176,18 +176,17 @@ const ContactForm = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div className="col d-block d-lg-none justify-content-center align-items-center col">
-                    <div className='p-5 bg-light rounded shadow w-75 mx-auto'>
+                    <div className='p-3 p-md-4 bg-light rounded shadow w-auto m-3'>
                         <TitleSection className='text-center'
                             title='Reach us'
                             headline='Send a message'
                         />
                         <form>
                             <div className="row row-cols-2">
-                                <div className='col-6 pb-2 d-flex flex-column'>
+                                <div className='col-12 col-sm-6 pb-2 d-flex flex-column'>
                                     <label htmlFor="fullName" className='fw-bold'> Your name</label>
                                     <input
                                         id='fullName'
@@ -197,7 +196,7 @@ const ContactForm = () => {
                                         placeholder='Enter your name'
                                     />
                                 </div>
-                                <div className='col-6 pb-2 d-flex flex-column'>
+                                <div className='col-12 col-sm-6 pb-2 d-flex flex-column'>
                                     <label htmlFor="email" className='fw-bold'> Your email</label>
                                     <input
                                         id='email'
@@ -207,7 +206,7 @@ const ContactForm = () => {
                                         placeholder='Enter your email'
                                     />
                                 </div>
-                                <div className='col-6 pb-2 d-flex flex-column'>
+                                <div className='col-12 col-sm-6 pb-2 d-flex flex-column'>
                                     <label htmlFor="mobile" className='fw-bold'> Phone Number</label>
                                     <input
                                         id='mobile'
@@ -217,7 +216,7 @@ const ContactForm = () => {
                                         placeholder='Enter your number'
                                     />
                                 </div>
-                                <div className='col-6 pb-2 d-flex flex-column'>
+                                <div className='col-12 col-sm-6 col-sm-6pb-2 d-flex flex-column'>
                                     <label htmlFor="subject" className='fw-bold'> Subject</label>
                                     <input
                                         id='subject'
@@ -246,7 +245,7 @@ const ContactForm = () => {
                             />
 
                         </form>
-                        <div className='contact_form_video_icon mt-4 d-flex gap-3'>
+                        <div className='contact_form_video_icon mt-4 d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3'>
                             <div className="video_inner type_seven">
                                 <a href="#" className="lightbox-image">
                                     <i className="icon-play">
@@ -254,9 +253,9 @@ const ContactForm = () => {
                                     </i>
                                 </a>
                             </div>
-                            <div >
+                            <div className='d-flex flex-column gap-2'>
                                 <h4> General Enquires</h4>
-                                <div className='d-flex flex-column flex-md-row gap-3'>
+                                <div className='d-flex flex-column flex-md-row gap-2'>
                                     <div>
                                         <span>
                                             Phone:
