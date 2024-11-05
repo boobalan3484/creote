@@ -6,7 +6,8 @@ import LogoDefault from '/public/images/logo-default.png'
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
-import { AiOutlineYoutube } from "react-icons/ai";
+// import { AiOutlineYoutube } from "react-icons/ai";
+import { FaYoutube } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 // // contact_us
 import { BsTelephone } from "react-icons/bs";
@@ -50,12 +51,12 @@ export const data = {
         },
         {
             id: 2,
-            label: 'About us',
+            label: 'Pages',
             link: '/',
         },
         {
             id: 3,
-            label: 'Services',
+            label: 'Elements',
             link: '/',
             child: [
                 {
@@ -74,12 +75,12 @@ export const data = {
         },
         {
             id: 4,
-            label: 'Influencer',
+            label: 'Blog',
             link: '/',
         },
         {
             id: 5,
-            label: 'Pages',
+            label: 'Projects',
             link: '/',
             child: [
                 {
@@ -109,6 +110,43 @@ export const data = {
                 {
                     id: 5,
                     parent_id: 5,
+                    label: 'Error 404',
+                    link: '/',
+                },
+            ]
+        },
+        {
+            id: 6,
+            label: 'Shop',
+            link: '/',
+            child: [
+                {
+                    id: 1,
+                    parent_id: 6,
+                    label: 'Gallery',
+                    link: '/',
+                },
+                {
+                    id: 2,
+                    parent_id: 6,
+                    label: 'Contact us',
+                    link: '/',
+                },
+                {
+                    id: 3,
+                    parent_id: 6,
+                    label: 'FAQ',
+                    link: '/',
+                },
+                {
+                    id: 4,
+                    parent_id: 6,
+                    label: 'Blog',
+                    link: '/',
+                },
+                {
+                    id: 5,
+                    parent_id: 6,
                     label: 'Error 404',
                     link: '/',
                 },
@@ -161,7 +199,7 @@ export const data = {
         },
         {
             platform: 'YouTube',
-            icon: AiOutlineYoutube,
+            icon: FaYoutube,
             link: 'https://www.youtube.com/',
             color: '#FF0000',
         },

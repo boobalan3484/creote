@@ -3,8 +3,9 @@ import React, { createElement, Fragment, useEffect, useState } from 'react'
 import '@/style/Default/Header.css'
 import { FaAngleDown } from "react-icons/fa6";
 import { CgClose } from "react-icons/cg";
-import { HiMenu } from "react-icons/hi";
+import { HiMenu, HiOutlineSearch } from "react-icons/hi";
 import { data } from '@/utils/Data'
+import { LiaShoppingBagSolid } from 'react-icons/lia';
 
 const Header1 = () => {
 
@@ -90,7 +91,7 @@ const Header1 = () => {
                                     {navMenu ? <CgClose /> : <HiMenu />}
                                 </button>
                             </div>
-                            <div className='col d-none  d-lg-flex flex-row justify-content-end align-items-center gap-lg-5'>
+                            <div className='col d-none  d-lg-flex flex-row justify-content-end align-items-center gap-lg-5 home1_header'>
                                 <nav>
                                     <ul className='list-unstyled d-flex flex-row flex-wrap gap-lg-4 gap-xl-5 my-0'>
                                         {nav_links.map((category, idx) => (
@@ -130,6 +131,26 @@ const Header1 = () => {
                                         ))}
                                     </ul>
                                 </nav>
+
+                                <div className='d-flex gap-3 align-items-center border-start border-2 border-secondary-subtle ps-3'>
+                                    <button type="button" className="search-toggler">
+                                        {/* <i className="icon-search"> */}
+                                        <HiOutlineSearch className='text-secondary fs-4' />
+                                    {/* </i> */}
+                                    </button>
+
+                                    <div className='py-2'>
+                                        <div className="mini_cart_togglers header_side_cart">
+                                            <div className="mini-cart-count position-absolute"style={{top:'-50%'}}>
+                                                0
+                                            </div>
+                                            <i className="icon-shopping-bag1">
+                                                <LiaShoppingBagSolid className='fs-4 text-secondary' />
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                         {navMenu && (

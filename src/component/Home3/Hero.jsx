@@ -113,13 +113,13 @@ const Hero = () => {
                 >
                     {slider_list.map((item, idx) => (
                         <Fragment key={idx}>
-                            <SplideSlide >
+                            <SplideSlide>
                                 <div className='slide-item-content position-relative d-flex justify-content-center'>
                                     <div className='slide_item ' >
                                         <div className="image-layer" style={{ backgroundImage: `${item.image}` }}></div>
                                     </div>
                                     <div className='position-absolute container mx-auto h-100 w-100 top-0 row d-flex align-items-center gap-4 px-4 p-md-5'>
-                                        <div className={`col-12 d-flex flex-column  justify-content-start align-items-start gap-4 slider_content ${item.main_ClassName}`}>
+                                        <div className={`col-12 py-5 d-flex flex-column  justify-content-start align-items-start gap-4 slider_content ${item.main_ClassName}`}>
 
                                             <TitleSection
                                                 title={item.title}

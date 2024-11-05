@@ -49,6 +49,9 @@ const ServiceSlider = () => {
                         },
                         990: {
                             perPage: 2, // 1 slide per view on medium screens (tablet)
+                        },
+                        690:{
+                            perPage:1
                         }
                     },
                 }}

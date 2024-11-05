@@ -4,11 +4,12 @@ import '@/style/Home2/Header.css'
 // import LinkButton from '../SectionComponent/LinkButton'
 import { FaAngleDown } from "react-icons/fa6";
 import { CgClose } from "react-icons/cg";
-import { HiMenu } from "react-icons/hi";
+import { HiMenu, HiOutlineSearch } from "react-icons/hi";
 import { BsTelephone } from "react-icons/bs";
 import { MdMailOutline } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { data } from '@/utils/Data'
+import LinkButton from './Reusable/LinkButton';
 
 // const nav_links = [
 //     {
@@ -106,7 +107,7 @@ import { data } from '@/utils/Data'
 
 const Header = () => {
 
-    const {logo_white, nav_links, contact_us } = data
+    const { logo, nav_links, contact_us } = data
 
     const [navMenu, setNavMenu] = useState(false);
     const [activeMenu, setActiveMenu] = useState(null);
@@ -143,24 +144,12 @@ const Header = () => {
                 <section className='header-top'>
                     <div className="header_top">
                         <div className="py-1 container d-flex flex-column flex-lg-row justify-content-center">
-                            {/* <div className="top_left ">
-                                <ul className='d-flex flex-column gap-3 flex-sm-row flex-lg-column flex-xl-row text-center justify-content-center w-100'>
-                                    <li>
-                                        <a href="" className='get_a_quote'>
-                                            Get a quote
-                                        </a>
-                                    </li>
-                                    <li>
-                                        Welcome to our consulting company.
-                                    </li>
-                                </ul>
-                            </div> */}
                             <div className="d-flex">
                                 <ul className="contact_info_two text-start text-lg-center">
                                     {contact_us.map((item, idx) => (
                                         <li className="single my-2 my-lg-0 mx-3" key={idx}>
                                             <div className='home2_icon_bg d-flex gap-2'>
-                                                <span className="icon-telephone"> {createElement(item.icon, {className:'fs-3'})}</span>
+                                                <span className="icon-telephone"> {createElement(item.icon, { className: 'fs-3' })}</span>
                                                 <div className='d-flex flex-column text-start gap-2'>
                                                     <h5 className='text-capitalize'> {item.platform} </h5>
                                                     <a href={item.url}>{item.label}</a>
@@ -182,7 +171,7 @@ const Header = () => {
                             <div className='header-logo-wrapper '>
                                 <div className='header-logo-anime'>
                                     <a href="/" className='header-logo-link'>
-                                        <img src={logo_white} alt="" className='header-logo-img' />
+                                        <img src={logo.logo_white.src} alt="" className='header-logo-img' />
                                     </a>
                                 </div>
                             </div>
@@ -191,7 +180,7 @@ const Header = () => {
                                     {navMenu ? <CgClose /> : <HiMenu />}
                                 </button>
                             </div>
-                            <div className='col d-none  d-lg-flex flex-row justify-content-end align-items-center gap-lg-5'>
+                            <div className='col home2_header d-none  d-lg-flex flex-row justify-content-end align-items-center gap-lg-5'>
                                 <nav>
                                     <ul className='list-unstyled d-flex flex-row flex-wrap gap-lg-4 gap-xl-5 my-0'>
                                         {nav_links.map((category, idx) => (
@@ -210,7 +199,7 @@ const Header = () => {
                                                             onClick={() => handleClick(category.id)}
                                                             key={category.id}
                                                         >
-                                                            <a className='header-nav-link text-uppercase fw-semibold d-flex align-items-center gap-2'>
+                                                            <a className='header-nav-link2 text-uppercase fw-semibold d-flex align-items-center gap-2'>
                                                                 {category.label}
                                                                 <FaAngleDown />
                                                             </a>
@@ -231,7 +220,11 @@ const Header = () => {
                                         ))}
                                     </ul>
                                 </nav>
-                                {/* <LinkButton label='Get Started' /> */}
+                                <button type="button" className="search-toggler"><i className="icon-search"></i>
+                                    <HiOutlineSearch className='text-white' />
+                                </button>
+                                <LinkButton label='Get Started'
+                                    a_ClassName='theme-btn one color_white_1' />
                             </div>
                         </div>
                         {navMenu && (

@@ -297,3 +297,51 @@
     background-color: var(--e-global-color-accent);
 
 }
+
+
+
+
+.home1_header div button {
+    border: 0px;
+    box-shadow: none;
+    background: none;
+
+    position: relative;
+    cursor: pointer;
+
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--text-color-dark);
+    top: 4px;
+}
+
+.home1_header div button i {
+    position: relative;
+    top: 3px;
+    line-height: 20px;
+
+}
+
+.home1_header div .mini_cart_togglers {
+    background: transparent;
+    border: 0px;
+    position: relative;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.home1_header div div .mini_cart_togglers .mini-cart-count {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    border-radius: 30px;
+    color: #fff;
+    top: -17px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    background: var(--primary-color-one);
+}

@@ -42,7 +42,7 @@ import { usePathname } from 'next/navigation';
 
 import Header1 from '@/component/Default/Header'
 import Header2 from '@/component/Home2/Header'
-// import Header3 from '@/component/Home3/Header'
+import Header3 from '@/component/Home3/Header'
 
 const DynamicHeaderComponent = () => {
   const pathname = usePathname();
@@ -51,7 +51,7 @@ const DynamicHeaderComponent = () => {
   const routeConfig = {
     '/': Header1,
     '/home2': Header2,
-    // '/home3': Header3,
+    '/home3': Header3,
   };
 
   // Get the component based on the pathname, default to HomePage if not found

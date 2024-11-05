@@ -201,7 +201,8 @@
 
 .header-nav-link2 {
     color: var(--color-white);
-    fill: var(--e-global-color-secondary);
+    /* fill: var(--e-global-color-secondary); */
+
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 8px;
@@ -230,7 +231,7 @@
     cursor: pointer;
 }
 
-.header-nav-link::before {
+.header-nav-link2 ::before {
     display: block;
     position: absolute;
     transition: .3s;
@@ -238,7 +239,7 @@
     opacity: 0;
 }
 
-.header-nav-link::after {
+.header-nav-link2 ::after {
     background-color: var(--primary-color-one);
     height: 2px;
     opacity: 0;
@@ -259,16 +260,16 @@
 
 }
 
-.header-nav-link:hover,
-.header-nav-link:focus,
-.header-nav-link:active {
+.header-nav-link2:hover,
+.header-nav-link2:focus,
+.header-nav-link2:active {
     color: var(--primary-color-two);
     fill: var(--primary-color-two);
 }
 
-.header-nav-link:hover::after,
-.header-nav-link:focus::after,
-.header-nav-link:active::after {
+.header-nav-link2:hover::after,
+.header-nav-link2:focus::after,
+.header-nav-link2:active::after {
     opacity: 1;
 }
 
@@ -307,4 +308,19 @@
     background: var(--primary-color-one);
     color: white !important;
     border-radius: 50px;
+}
+
+.home2_header button {
+    border: 0px;
+    box-shadow: none;
+    background: none;
+
+    position: relative;
+    cursor: pointer;
+
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--text-color-dark);
+    top: 4px;
 }
